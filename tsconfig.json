@@ -1,0 +1,113 @@
+{
+  "compilerOptions": {
+    /* Посетите https://aka.ms/tsconfig для подробной информации о настройках */
+
+    /* Настройки проектов */
+    // "incremental": true,                              /* Сохранять файлы .tsbuildinfo для инкрементальной компиляции. */
+    // "composite": true,                                /* Включить ограничения для использования проекта с Project References. */
+    // "tsBuildInfoFile": "./.tsbuildinfo",              /* Указать путь к файлу инкрементальной компиляции .tsbuildinfo. */
+    // "disableSourceOfProjectReferenceRedirect": true,  /* Отключить использование исходных файлов вместо деклараций (.d.ts) в проектах с composite. */
+    // "disableSolutionSearching": true,                 /* Отключить проверку ссылок между проектами при редактировании. */
+    // "disableReferencedProjectLoad": true,             /* Уменьшить количество автоматически загружаемых проектов. */
+
+    /* Язык и окружение */
+    "target": "ES6",                                  /* Версия JavaScript для выходного кода (например, ES5, ES6). */
+    // "lib": [],                                        /* Указать набор библиотек для целевого окружения (например, DOM, ES2015). */
+    // "jsx": "preserve",                                /* Управлять генерацией JSX (preserve, react, react-jsx). */
+    // "libReplacement": true,                           /* Включить замену стандартных библиотек. */
+    // "experimentalDecorators": true,                   /* Включить экспериментальную поддержку декораторов. */
+    // "emitDecoratorMetadata": true,                    /* Генерировать метаданные для декораторов (нужно для TypeORM, NestJS). */
+    // "jsxFactory": "",                                 /* Указать JSX-функцию (например, для Preact: "h"). */
+    // "jsxFragmentFactory": "",                         /* Указать JSX-фрагмент (например, "Fragment"). */
+    // "jsxImportSource": "",                            /* Указать модуль для импорта JSX-функций (например, "react-jsx"). */
+    // "reactNamespace": "",                             /* Указать пространство имён для React.createElement (устаревшее). */
+    // "noLib": true,                                    /* Отключить стандартные библиотеки TypeScript. */
+    // "useDefineForClassFields": true,                  /* Использовать стандартный синтаксис для полей класса (ES2022). */
+    // "moduleDetection": "auto",                        /* Метод обнаружения модулей (auto, legacy, force). */
+
+    /* Модули */
+    "module": "commonjs",                                /* Система модулей (CommonJS, ES6, AMD и др.). */
+    "rootDir": "./src",                                  /* Корневая папка с исходным кодом. */
+    // "moduleResolution": "node10",                     /* Стратегия разрешения модулей (node10, node16, bundler). */
+    // "baseUrl": "./",                                  /* Базовый путь для разрешения абсолютных импортов. */
+    // "paths": {},                                      /* Алиасы для путей импорта (например, "@/*": ["src/*"]). */
+    // "rootDirs": [],                                   /* Виртуальные объединённые корневые папки. */
+    // "typeRoots": [],                                  /* Пути к типам (аналог node_modules/@types). */
+    // "types": [],                                      /* Подключать только указанные типы (например, "jest"). */
+    // "allowUmdGlobalAccess": true,                     /* Разрешить доступ к UMD-глобалам из модулей. */
+    // "moduleSuffixes": [],                             /* Суффиксы файлов для разрешения модулей. */
+    // "allowImportingTsExtensions": true,               /* Разрешить импорт .ts/.tsx файлов (требует специальных настроек). */
+    // "rewriteRelativeImportExtensions": true,          /* Заменять расширения .ts/.tsx на .js в импортах. */
+    // "resolvePackageJsonExports": true,                /* Использовать поле "exports" из package.json. */
+    // "resolvePackageJsonImports": true,                /* Использовать поле "imports" из package.json. */
+    // "customConditions": [],                           /* Дополнительные условия для разрешения импортов. */
+    // "noUncheckedSideEffectImports": true,             /* Проверять импорты на побочные эффекты. */
+    // "resolveJsonModule": true,                        /* Разрешить импорт JSON-файлов. */
+    // "allowArbitraryExtensions": true,                 /* Разрешить импорт файлов с любыми расширениями (если есть .d.ts). */
+    // "noResolve": true,                                /* Запретить автоматическое добавление файлов через импорты. */
+
+    /* Поддержка JavaScript */
+    // "allowJs": true,                                  /* Разрешить компиляцию .js файлов. */
+    // "checkJs": true,                                  /* Проверять типы в .js файлах. */
+    // "maxNodeModuleJsDepth": 1,                        /* Глубина проверки JS-файлов в node_modules. */
+
+    /* Генерация кода */
+    // "declaration": true,                              /* Генерировать .d.ts файлы. */
+    // "declarationMap": true,                           /* Генерировать sourcemaps для .d.ts. */
+    // "emitDeclarationOnly": true,                      /* Генерировать только декларации, без JS. */
+    // "sourceMap": true,                                /* Генерировать .map файлы для отладки. */
+    // "inlineSourceMap": true,                          /* Встраивать sourcemaps в выходной JS. */
+    // "noEmit": true,                                   /* Не генерировать выходные файлы (только проверка типов). */
+    // "outFile": "./",                                  /* Собирать весь код в один файл (только для AMD/System). */
+    "outDir": "./dist",                                   /* Папка для сгенерированных файлов. */
+    // "removeComments": true,                           /* Удалять комментарии из выходного кода. */
+    // "importHelpers": true,                            /* Импортировать хелперы из tslib вместо дублирования. */
+    // "downlevelIteration": true,                       /* Корректная работа for-of для ES5. */
+    // "sourceRoot": "",                                 /* Корневой путь для исходников в sourcemaps. */
+    // "mapRoot": "",                                    /* Папка для sourcemaps (если не совпадает с outDir). */
+    // "inlineSources": true,                            /* Встраивать исходный код в sourcemaps. */
+    // "emitBOM": true,                                  /* Добавлять BOM (Byte Order Mark) в выходные файлы. */
+    // "newLine": "crlf",                                /* Использовать Windows-переносы строк (CRLF). */
+    // "stripInternal": true,                            /* Не генерировать декларации для @internal-кода. */
+    // "noEmitHelpers": true,                            /* Не генерировать хелперы (например, __extends). */
+    // "noEmitOnError": true,                            /* Не генерировать код при ошибках типов. */
+    // "preserveConstEnums": true,                       /* Сохранять const enum в выходном коде. */
+    // "declarationDir": "./",                           /* Папка для .d.ts файлов (если отличается от outDir). */
+
+    /* Совместимость */
+    // "isolatedModules": true,                          /* Гарантировать независимую транспиляцию каждого файла. */
+    // "verbatimModuleSyntax": true,                     /* Запрещать автоматическое преобразование import/export. */
+    // "isolatedDeclarations": true,                     /* Генерировать декларации без зависимостей. */
+    // "erasableSyntaxOnly": true,                       /* Запрещать не-ECMAScript синтаксис. */
+    // "allowSyntheticDefaultImports": true,             /* Разрешить import React from 'react' (если нет default export). */
+    "esModuleInterop": true,                             /* Улучшенная совместимость между CommonJS и ES-модулями. */
+    // "preserveSymlinks": true,                         /* Не разрешать символические ссылки (как в Node.js --preserve-symlinks). */
+    "forceConsistentCasingInFileNames": true,            /* Проверять регистр имён файлов при импорте. */
+
+    /* Проверка типов */
+    "strict": true,                                      /* Включить все строгие проверки типов. */
+    // "noImplicitAny": true,                            /* Запрещать неявный any. */
+    // "strictNullChecks": true,                         /* Строгая проверка null/undefined. */
+    // "strictFunctionTypes": true,                      /* Строгая проверка типов функций. */
+    // "strictBindCallApply": true,                      /* Строгая проверка bind/call/apply. */
+    // "strictPropertyInitialization": true,             /* Проверять инициализацию свойств класса. */
+    // "strictBuiltinIteratorReturn": true,              /* Строгий тип возврата у встроенных итераторов. */
+    // "noImplicitThis": true,                           /* Запрещать неявный any для this. */
+    // "useUnknownInCatchVariables": true,               /* Тип переменной в catch: unknown вместо any. */
+    // "alwaysStrict": true,                             /* Всегда использовать "use strict". */
+    // "noUnusedLocals": true,                           /* Ошибка при неиспользуемых переменных. */
+    // "noUnusedParameters": true,                       /* Ошибка при неиспользуемых параметрах. */
+    // "exactOptionalPropertyTypes": true,               /* Точные типы для optional-свойств (не добавлять undefined). */
+    // "noImplicitReturns": true,                        /* Ошибка если не все пути возвращают значение. */
+    // "noFallthroughCasesInSwitch": true,               /* Ошибка при "проваливании" в switch. */
+    // "noUncheckedIndexedAccess": true,                 /* Добавлять undefined при доступе по индексу. */
+    // "noImplicitOverride": true,                       /* Требовать override при переопределении методов. */
+    // "noPropertyAccessFromIndexSignature": true,       /* Запрещать доступ через точку к полям из index signature. */
+    // "allowUnusedLabels": true,                        /* Разрешать неиспользуемые метки. */
+    // "allowUnreachableCode": true,                     /* Разрешать недостижимый код. */
+
+    /* Дополнительно */
+    // "skipDefaultLibCheck": true,                      /* Не проверять стандартные библиотеки. */
+    "skipLibCheck": true                                 /* Не проверять типы в .d.ts файлах (ускоряет компиляцию). */
+  }
+}
